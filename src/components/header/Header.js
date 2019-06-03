@@ -20,79 +20,89 @@ class Header extends Component {
   render() {
     return (
       <div className='header'>
-        <div className={this.state.edit ? 'headerForm' : 'notDisplayed'}>
-          <form>
-            <label className='characterName'>
-              Personnage :
-              <input/>
-            </label>
+        <div>
+          <div className='cell'>
+            <span>
+              Personnage : 
+            </span>
 
-            <label className='characterClasses'>
-              Classe :
-              <input/>
-            </label>
+            <span>
+              {this.state.characterName}
+            </span>
 
-            <label className='characterLevel'>
-              Niveaux :
-              <input/>
-            </label>
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
+          </div>
 
-            <label className='characterAge'>
-              Age :
-              <input/>
-            </label>
+          <div className='cell'>
+            <span>
+              Classes : 
+            </span>
 
-            <label className='characterHeight'>
-              Taille :
-              <input/>
-            </label>
+            <span>
+              {this.state.classes} 
+            </span>
 
-            <label className='character'>
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
+          </div>
+
+          <div className='cell'>
+            <span>
+              Niveau : 
+            </span>
+            
+            <span>
+              {this.state.level}
+            </span>
+
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
+          </div>
+
+          <div className='cell'>
+            <span>
+              Age : 
+            </span>
+            <span>
+              {this.state.age}
+            </span>
+
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
+          </div>
+
+          <div className='cell'>
+            <span>
+              Taille : 
+            </span>
+
+            <span>
+              {this.state.height}
+            </span>
+
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
+          </div>
+
+          <div className='cell'>
+            <span>
               Poid :
-              <input/>
-            </label>
+            </span>
 
-            <label className='gender'>
-              Genre :
-              <input/>
-            </label>
+            <span>
+              {this.state.weight}
+            </span>
 
-            <label className='height'>
-              Catégorie de taille :
-              <input/>
-            </label>
-          </form>
-        </div>
-
-        <div className={this.state.edit ? 'notDisplayed' : 'headerDiplay'}>
-          <div className='cell'>
-            Personnage : {this.state.characterName}
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
           </div>
 
           <div className='cell'>
-            Classes : {this.state.classes} 
-          </div>
+            <span>
+              Genre : 
+            </span>
 
-          <div className='cell'>
-            Niveau : {this.state.level}
-          </div>
+            <span className={this.state.edit ? 'notDisplayed' : 'display'}>
+              {this.state.gender}
+            </span>
 
-          <div className='cell'>
-            Age : {this.state.age}
+            <input className={this.state.edit ? 'display' : 'notDisplayed'}/>
           </div>
-
-          <div className='cell'>
-            Taille : {this.state.height}
-          </div>
-
-          <div className='cell'>
-            Poid : {this.state.weight}
-          </div>
-
-          <div className='cell'>
-            Genre {this.state.gender}
-          </div>
-
         </div>
 
         <button
