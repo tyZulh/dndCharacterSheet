@@ -1,0 +1,21 @@
+.header {
+  border: 1px black solid;
+  border-radius: 5px;
+  box-shadow: 2px 3px;
+}
+
+.notDisplayed {
+  display: none;
+}
+
+.headerForm {
+  display: block;
+}
+
+.headerDisplay {
+  display: block;
+}
+
+.cell {
+  width: 10vw;
+}
