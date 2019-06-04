@@ -36,26 +36,26 @@ class HeaderItem extends Component {
   render() {
     return(
       <div className='cell'>
-        <span>
-          {this.props.title} :  
+        <span className='cellTitle'>
+          {this.props.title} : 
         </span>
 
         <span 
-          // className={this.state.edit ? 'notDisplayed' : 'display'}
+          className={this.state.edit ? 'notDisplayed' : 'cellData'} 
           onClick={this.displayEdit}
         >
           {this.state.value}
         </span>
 
         <input
-          className={this.state.edit ? 'display' : 'notDisplayed'}
+          className={this.state.edit ? 'cellInput' : 'notDisplayed'} 
           onChange={this.handleChange}
           placeholder={this.state.value}
         />
         <button 
-          className={this.state.edit ? 'display' : 'notDisplayed'}
+          className={this.state.edit ? 'editButton' : 'notDisplayed'}
           onClick={this.displayEdit}
-        ></button>
+        >+</button>
       </div>
     )
   }

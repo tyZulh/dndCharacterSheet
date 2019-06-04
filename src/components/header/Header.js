@@ -8,20 +8,18 @@ class Header extends Component {
     'Personnage',
     'Classes',
     'Niveau',
+    'genre',
     'Age',
     'Taille',
     'Poid',
-    'genre'
   ]
 
   render() {
     return (
       <div className='header'>
-        <div>
-          {this.items.map(item => {
-             return (<HeaderItem title={item}></HeaderItem>)
-          })}
-        </div>
+        {this.items.map(item => {
+          return (<HeaderItem title={item}></HeaderItem>)
+        })}
       </div>
     )
   }

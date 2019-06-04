@@ -1,11 +1,29 @@
-.display {
-  display: block;
-}
+.cell {
+  width: 24vw;
+  display: flex;
+  font-size: 1.2rem;
+  margin:12px 0;
+  
+  .cellInput {
+    display: block;
+    margin-left: 1rem;
+    width: 5vw;
+    font-size: 1.15rem;
+  }
+  
+  .cellData {
+    width: 5vw;
+  }
+    
+  .cellTitle {
+    display: inline-block;
+  }
 
-.notDisplayed {
-  display: none;
-}
+  .editButton {
+    border: none;
+  }
 
-span {
-  min-width: 10px;
+  .notDisplayed {
+    display: none;
+  }
 }
