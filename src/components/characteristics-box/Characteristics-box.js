@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacteristicLine from '../characteritic-line/Characteristic-line'
+import './Characteristics-box.scss'
 
 class CharacteristicsBox extends Component {
   characteristics = [
@@ -14,7 +15,7 @@ class CharacteristicsBox extends Component {
   render() {
     
     return(
-      <div>
+      <div className='caracteristicBox'>
         {this.characteristics.map(charcteristic => {
           return (
             <CharacteristicLine data={charcteristic}/>
