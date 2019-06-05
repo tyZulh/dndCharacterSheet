@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 
 class CharacteristicLine extends Component {
+  state = {
+    totalValue : 0,
+    initialValue : 12,
+    alterationBonus : 2,
+    variousBonus : 0,
+    variousMalus : 1,
+    modificator : 0,
+  }
+  
+  calculateCharacteristic = _=> {
+    return this.state.initialValue + this.state.alterationBonus + this.state.variousBonus - this.state.variousMalus
+  }
 
   render() {
     return (
@@ -11,6 +23,7 @@ class CharacteristicLine extends Component {
 
         <form>
           <div className="characteristicTotalValue">
+            {this.calculateCharacteristic()}
           </div>
 
           <div className="characteristicBaseValue">
