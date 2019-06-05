@@ -3,12 +3,12 @@ import CharacteristicLine from '../characteritic-line/Characteristic-line'
 
 class CharacteristicsBox extends Component {
   characteristics = [
-    For,
-    Dex,
-    Con,
-    Int,
-    Sag,
-    Char
+    "For",
+    "Dex",
+    "Con",
+    "Int",
+    "Sag",
+    "Char"
   ]
    
   render() {
@@ -17,7 +17,7 @@ class CharacteristicsBox extends Component {
       <div>
         {this.characteristics.map(charcteristic => {
           return (
-            <CharacteristicLine></CharacteristicLine>
+            <CharacteristicLine data={charcteristic}/>
           )
         })}
       </div>
