@@ -1,36 +1,51 @@
 import React, { Component } from 'react';
 
 class CharacteristicLine extends Component {
+
   render() {
     return (
       <div>
         <div className="characteristicName">
-          {characteristicLine} = 
+          {this.props.data} =
         </div>
 
         <form>
           <div className="characteristicTotalValue">
-            <input type= "text"/>
           </div>
 
           <div className="characteristicBaseValue">
-            <input type= "text"/>
+            <input
+              type= "number"
+              placeholder={this.state.initialValue}
+            />
           </div>
 
           <div className="alterationBonus">
-            <input type= "text"/>
+            <input
+              type= "number"
+              placeholder={this.state.alterationBonus}
+            />          
           </div>
 
           <div className="variousBonus">
-            <input type= "text"/>
+            <input
+              type= "number"
+              placeholder={this.state.variousBonus}
+            />          
           </div>
 
           <div className="variousMalus">
-            <input type= "text"/>
+            <input
+              type= "number"
+              placeholder={this.state.variousMalus}
+            />
           </div>
 
           <div className="characteristicModificator">
-            <input type= "text"/>
+            <input
+              type= "number"
+              placeholder={this.state.initialValue}
+            />
           </div>
         </form>
       </div>
