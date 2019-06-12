@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CompetenceLine from '../competence-line/CompetenceLine'
 import './competences-box.scss'
 
 class CompetencesBox extends Component {
