@@ -1,3 +1,33 @@
-.inputBox {
-  width: 2vw;
+.characteristicLine {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: 
+    "characteristicName characteristicContainer"
+  ;
+  width: 30vw;
+
+  .characteristicName {
+    grid-area: characteristicName;
+  }
+  
+  .characteristicContainer {
+    grid-area: characteristicContainer;
+    display : grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "charTot charInit alterBonus varBonus varMalus charMod;"
+    ;
+    width : 90%;
+    
+    .cell {
+      width: 100%;
+
+      .inputBox {
+        border: none;
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+  }
 }
