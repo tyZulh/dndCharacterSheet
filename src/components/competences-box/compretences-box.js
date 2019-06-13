@@ -44,6 +44,13 @@ class CompetencesBox extends Component {
   render() {
     return(
       <div className='competencesBox'>
+        <div className='competenceHeader'>
+          <span className='abilityName'>Nom de la compétence</span>
+          <span className='modAbility'>Mod. de comp.</span>
+          <span className='master'>Maitrise</span>
+          <span className='modCar'>Mod. de car.</span>
+          <span className='otherMod'>Mod. divers</span>
+        </div>
         {this.competences.map(competence => {
           return (
             <CompetenceLine data={competence}/>
