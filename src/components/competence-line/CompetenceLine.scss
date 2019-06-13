@@ -1,0 +1,27 @@
+.competenceLineWrapper {
+  .competenceLine {
+    display: grid;
+    grid-template-columns: 31% 17% 17% 17% 17%;
+    grid-template-areas: " abilityName modAbility master modCar otherMod ";
+    
+    .abilityName {
+      grid-area: abilityName;
+    }
+
+    .modAbility {
+      grid-area: modAbility;
+    }
+
+    .master {
+      grid-area: master;
+    }
+
+    .modCar {
+      grid-area: modCar;
+    }
+
+    .otherMod {
+      grid-area: otherMod;
+    }
+  }
+}
