@@ -16,20 +16,15 @@ class HeaderItem extends Component {
     if (!this.state.headerItemData.value) {
       this.setState({ edit : true })
     }
-    console.log(this.state);       
   }
 
   handleChange = event => {
     this.setState({value : event.target.value})
     this.headerItemData.value = event.target.value
-    this.setState({headerItemData : this.headerItemData})
-    console.log(this.state);
-    
+    this.setState({headerItemData : this.headerItemData})    
   }
 
   displayEdit = _ => {
-    console.log(this.state);
-    
     this.setState({edit : !this.state.edit})
   }
 

@@ -4,7 +4,39 @@ import './CompetenceLine.scss';
 class CompetenceLine extends Component {
   state = {
     totalValue : 0,
+    master : 0,
+    modCar : 0,
+    otherMod : 0,
+    abilityClass : true,
+    inateAbility : false,
+  }
+  totalValue = 0
 
+  calculateAbilityModifier = _=>{
+    if (this.state.abilityClass || this.state.inateAbility) {
+      this.totalValue = this.state.master + this.state.modCar + this.state.otherMod
+    } else {
+      this.totalValue = Math.floor(this.state.master / 2) + this.state.modCar + this.state.otherMod
+    }
+
+    return this.totalValue
+  }
+
+  classAbility = _=>{
+    const abilityClass = !this.state.abilityClass; 
+    this.setState({abilityClass : abilityClass}, ()=>{
+      this.calculateAbilityModifier()
+      this.setState({totalValue : this.totalValue})
+    })
+
+  }
+
+  handleChange = event => {
+    event.preventDefault()
+    this.setState({[event.target.name]: +event.target.value}, ()=> {
+      this.calculateAbilityModifier()
+      this.setState({totalValue : this.totalValue})
+    })
   }
 
   render() {
@@ -12,40 +44,56 @@ class CompetenceLine extends Component {
       <div className='competenceLineWrapper'>
         <div className='competenceLine'>
           <div className='abilityName'>
+            <div
+              className={this.state.abilityClass ? 'classAbility' : 'isClassAbility'}
+              onClick={this.classAbility} >
+            </div>
             {this.props.data}
           </div>
 
+
           <div className='modAbility cell'>
-            <input
-              type= "number"
-              name="modAbility"
-              className="inputBox"
-              onCHange={this.handleChange}
-            />
+            <span>
+             {this.state.totalValue} =
+            </span>
           </div>
 
           <div className='cell'>
             <input
               type="number"
               name="master"
-              onCHange={this.handleChange}
+              className="inputBox"
+              onChange={this.handleChange}
             />
+            <span>
+              +
+            </span>
           </div>
 
           <div className='cell'>
             <input
               type="number"
               name="modCar"
-              onCHange={this.handleChange}
+              className="inputBox"
+              onChange={this.handleChange}
             />
+            
+            <span>
+              +
+            </span>
           </div>
 
           <div className='cell'>
             <input
               type="number"
               name="otherMod"
-              onCHange={this.handleChange}
+              className="inputBox"
+              onChange={this.handleChange}
             />
+
+            <span>
+              
+            </span>
           </div>
         </div>
       </div>

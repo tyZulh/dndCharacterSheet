@@ -6,6 +6,20 @@
     
     .abilityName {
       grid-area: abilityName;
+      padding: 0 5px; 
+
+      .isClassAbility {
+        border:1px solid black;
+        height: 1rem;
+        width: 1rem;
+        background-color: darkgrey;
+      }
+      
+      .classAbility {
+        border:1px solid black;
+        height: 1rem;
+        width: 1rem;
+      }
     }
 
     .modAbility {
@@ -22,6 +36,10 @@
 
     .otherMod {
       grid-area: otherMod;
+    }
+
+    .inputBox {
+      width: 40px;
     }
   }
 }

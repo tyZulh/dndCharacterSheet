@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 31% 17% 17% 17% 17%;
     grid-template-areas: "name modComp master modCar otherMod";
+    padding-bottom: 10px;
 
     .abilityName {
       grid-area: name;
