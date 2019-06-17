@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import SaveRollLine from '../competence-line/CompetenceLine'
+import SaveRollLine from '../saveRoll-line/SaveRoll-line'
+import './SaveRolls-box.scss'
 
-class SaveRollBox extends Component {
+class SaveRollsBox extends Component {
   saves = [ 
     'réflexes',
     'vigueur',
@@ -9,11 +10,13 @@ class SaveRollBox extends Component {
   ]
   render() {
     return(
-      <div className='saveRollBox'>
+      <div className='saveRollsBox'>
         {this.saves.map(save => {
-          return <SaveRollLine data={saves}/>
+          return <SaveRollLine data={save}/>
         })}
       </div>
     )
   }
 }
+
+export default SaveRollsBox
