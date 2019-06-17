@@ -58,7 +58,7 @@ class CompetenceLine extends Component {
             </span>
           </div>
 
-          <div className='cell'>
+          <div className='master cell'>
             <input
               type="number"
               name="master"
@@ -70,7 +70,7 @@ class CompetenceLine extends Component {
             </span>
           </div>
 
-          <div className='cell'>
+          <div className='modCar cell'>
             <input
               type="number"
               name="modCar"
@@ -83,7 +83,7 @@ class CompetenceLine extends Component {
             </span>
           </div>
 
-          <div className='cell'>
+          <div className='otherMod cell'>
             <input
               type="number"
               name="otherMod"

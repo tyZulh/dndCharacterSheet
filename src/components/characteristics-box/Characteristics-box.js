@@ -15,7 +15,7 @@ class CharacteristicsBox extends Component {
   render() {
     
     return(
-      <div className='caracteristicBox'>
+      <div className='characteristicBox'>
         {this.characteristics.map(charcteristic => {
           return (
             <CharacteristicLine data={charcteristic}/>

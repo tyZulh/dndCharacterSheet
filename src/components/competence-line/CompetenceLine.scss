@@ -4,6 +4,10 @@
     grid-template-columns: 31% 17% 17% 17% 17%;
     grid-template-areas: " abilityName modAbility master modCar otherMod ";
     
+    .cell {
+      width: 100%
+    }
+
     .abilityName {
       grid-area: abilityName;
       padding: 0 5px; 
