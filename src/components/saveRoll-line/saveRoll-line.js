@@ -34,63 +34,62 @@ class SaveRollLine extends Component {
             {this.props.data}
           </div>
 
-          <form className= "saveContainer">
-            <div className= "saveRollTotalValue cell">
-             {this.state.rollModifier}
-            </div>
-
+          <div className= "saveRollTotalValue">
+            {this.state.rollModifier}
+          
             <span>
               =
             </span>
+          </div>
 
-            <div className= "baseValueModifier">
-              <input
-                type= "number"
-                name= "baseValueModifier"
-                className= "inputBox"
-                onChange= {this.handleChange}
-              /> 
 
-              <span>
-                +
-              </span> 
-            </div>
+          <div className= "baseValueModifier">
+            <input
+              type= "number"
+              name= "baseValueModifier"
+              className= "inputBox"
+              onChange= {this.handleChange}
+            /> 
 
-            <div className= "characteristicModifier">
-              <input
-                type= "number"
-                name= "characteristicModifier"
-                className= "inputBox"
-                onChange= {this.handleChange}
-              />
+            <span>
+              +
+            </span> 
+          </div>
 
-              <span>
-                +
-              </span>
-            </div>
+          <div className= "characteristicModifier">
+            <input
+              type= "number"
+              name= "characteristicModifier"
+              className= "inputBox"
+              onChange= {this.handleChange}
+            />
 
-            <div className= "magicalModifier">
-              <input
-                type= "number"
-                name= "magicalModifier"
-                className= "inputBox"
-                onChange= {this.handleChange}
-              />
+            <span>
+              +
+            </span>
+          </div>
 
-              <span>
-                +
-              </span>
-            </div>
+          <div className= "magicalModifier">
+            <input
+              type= "number"
+              name= "magicalModifier"
+              className= "inputBox"
+              onChange= {this.handleChange}
+            />
 
-            <div className="temporaryModifier">
-              <input
-                type="number"
-                name="temporaryModifier"
-                className="inputBox"
-                onChange={this.handleChange}
-              />
-            </div>
-          </form>
+            <span>
+              +
+            </span>
+          </div>
+
+          <div className="temporaryModifier">
+            <input
+              type="number"
+              name="temporaryModifier"
+              className="inputBox"
+              onChange={this.handleChange}
+            />
+          </div>
         </div>
       </div>
     )
