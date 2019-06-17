@@ -2,7 +2,8 @@
   .competenceLine {
     display: grid;
     grid-template-columns: 31% 17% 17% 17% 17%;
-    grid-template-areas: " abilityName modAbility master modCar otherMod ";
+    grid-template-areas: 
+    " abilityName modAbility master modCar otherMod ";
     
     .cell {
       width: 100%
