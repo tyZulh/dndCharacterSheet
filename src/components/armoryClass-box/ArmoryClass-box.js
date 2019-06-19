@@ -36,107 +36,138 @@ class ArmoryClassBox extends Component {
     return (
       <div className="armoryClassWrapper">
 
-        <div className="armorValue">
-          <div>
-            {this.state.armoryClass}
+        <section className="armorClassDetail">
+
+          <div className="armorValue">
+            <div className="armorValueHeader">
+              Classe d'armure
+            </div>
+            
+            <div>
+              {this.state.armoryClass}
+            </div>
+
+            <span>
+              = 10 +
+            </span>
           </div>
 
-          <span>
-            =
-          </span>
-        </div>
+          <div className="armorBaseValue cell">
+            <label className="armorBaseValueHeader">
+              Bonus d'armure
+            </label>
 
-        <div className="armorBaseValue">
-          <span>
-            10 +
-          </span>
-          
-          <input
-            type="number"
-            name="armorBaseValue"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
+            <input
+              type="number"
+              name="armorBaseValue"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
 
-          <span>
-            +
-          </span>
-
-        </div>
-
-        <div className="dexModifier">
-          <input
-            type="number"
-            name="dexModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
-
-          <span>
-            +
-          </span>
-        </div>
-
-        <div className="shieldModifier">
-          <input
-            type="number"
-            name="shieldModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
-
-          <span>
+            <span>
               +
-          </span>
-        </div>
+            </span>
 
-        <div className="heightModifier">
-          <input
-            type="number"
-            name="heightModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
+          </div>
 
-          <span>
-            +
-          </span>
-        </div>
+          <div className="dexModifier cell">
+            <label className="dexModifierHeader">
+              Mod de dex
+            </label>
 
-        <div className="naturalArmorModifer">
-          <input
-            type="number"
-            name="naturalArmorModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
+            <input
+              type="number"
+              name="dexModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
 
-          <span>
-            +
-          </span>
-        </div>
+            <span>
+              +
+            </span>
+          </div>
 
-        <div className="parrymodifer">
-          <input
-            type="number"
-            name="parryModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
+          <div className="shieldModifier cell">
+            <label className="shieldModifierHeader">
+              Bonus de bouclier
+            </label>
 
-          <span>
-            +
-          </span>
-        </div>
+            <input
+              type="number"
+              name="shieldModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
 
-        <div className="otherModifier">
-          <input
-            type="number"
-            name="otherModifier"
-            onChange={this.handleChange}
-            className="inputBox"
-          />
-        </div>
+            <span>
+                +
+            </span>
+          </div>
+
+          <div className="heightModifier cell">
+            <label className="heightModifierHeader">
+              Mod de taille
+            </label>
+            
+            <input
+              type="number"
+              name="heightModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
+
+            <span>
+              +
+            </span>
+          </div>
+
+          <div className="naturalArmorModifer cell">
+            <label className="naturalArmorModifierHeader">
+              Bonus d'armure naturelle
+            </label>
+            
+            <input
+              type="number"
+              name="naturalArmorModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
+
+            <span>
+              +
+            </span>
+          </div>
+
+          <div className="parryModifier cell">
+            <label className="parryModifierHeader">
+              Bonus de parrade
+            </label>
+
+            <input
+              type="number"
+              name="parryModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
+
+            <span>
+              +
+            </span>
+          </div>
+
+          <div className="otherModifier cell">
+            <label className="otherModifierHeader">
+              Modificateur divers
+            </label>
+
+            <input
+              type="number"
+              name="otherModifier"
+              onChange={this.handleChange}
+              className="inputBox"
+            />
+          </div>  
+        </section>
       </div>
     )
   }
