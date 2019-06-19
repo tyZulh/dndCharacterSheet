@@ -4,4 +4,16 @@
   box-shadow: 2px 3px;
   margin: 4px;
   padding: 10px;
+
+  .armorClassDetail {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 30%;
+    flex-direction: column;
+    
+    .cell {
+      width: 12%;
+      display: flex;
+    }
+  }
+
 }
