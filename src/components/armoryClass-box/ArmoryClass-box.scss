@@ -8,11 +8,20 @@
   .armorClassDetail {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 30%;
-    flex-direction: column;
     
     .cell {
-      width: 12%;
-      display: flex;
+      width: 75%;
+      flex-direction: column;
+      display: grid;
+      grid-template-rows: 75% 25%;
+
+      .inputZone {
+        display: flex;
+
+        input {
+          width: 75%;
+        }
+      }
     }
   }
 
