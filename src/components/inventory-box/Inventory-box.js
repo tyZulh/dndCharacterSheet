@@ -8,10 +8,13 @@ class InventoryBox extends Component {
     equipementToAddWeight : '',
     equipementToAddLocation : '',
     equipementToAddPrice : '',
+    equipementToAddNote : ''
   }
 
   handleChange = (event) => {
     this.setState({[event.target.name] : event.target.value}, ()=> {
+      console.log(this.state);
+      
     })
   }
 
@@ -21,15 +24,17 @@ class InventoryBox extends Component {
       equipementToAddWeight : '',
       equipementToAddLocation : '',
       equipementToAddPrice : '',
+      equipementToAddNote : ''
     },)
   }
 
-  addEquipement = () => {  
+  addEquipement = () => {     
     const equipementToAdd = {
       name : this.state.equipementToAddName,
       location : this.state.equipementToAddLocation,
       weight : this.state.equipementToAddPrice,
       price : this.state.equipementToAddWeight,
+      note : this.state.equipementToAddNote
     }
 
     if(this.state.equipementList.length > 0 ) {
@@ -60,6 +65,16 @@ class InventoryBox extends Component {
               className="inputBox"
               type="text"
               name="equipementToAddName"
+              onChange={this.handleChange}
+              value={this.state.equipementToAddName}
+              />
+          </div>
+
+          <div className="">
+            <input
+              className="inputBox"
+              type="textarea"
+              name="equipementToAddNote"
               onChange={this.handleChange}
               value={this.state.equipementToAddName}
               />
@@ -106,9 +121,13 @@ class InventoryBox extends Component {
             
             
             return (
-              <div key="index">
+              <div>
                 <div>
                   {equipement.name}
+                </div>
+
+                <div>
+                  {equipement.note}
                 </div>
 
                 <div>
