@@ -1,0 +1,35 @@
+.competencesBox {
+  border: 1px black solid;
+  border-radius: 5px;
+  box-shadow: 2px 3px;
+  margin: 4px;
+  padding: 10px;
+  width: 60vw;
+
+  .competenceHeader {
+    display: grid;
+    grid-template-columns: 31% 17% 17% 17% 17%;
+    grid-template-areas: "name modComp master modCar otherMod";
+    padding-bottom: 10px;
+
+    .abilityName {
+      grid-area: name;
+    }
+
+    .modAbility {
+      grid-area: modComp;
+    }
+
+    .master {
+      grid-area: master;
+    }
+
+    .modCar {
+      grid-area: modCar;
+    }
+
+    .otherMod {
+      grid-area: otherMod;
+    }
+  }
+}
