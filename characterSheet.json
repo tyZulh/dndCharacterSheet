@@ -1,0 +1,348 @@
+{
+    
+    "characteristic" : {
+        "For": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        },
+        "Dex": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        },
+    
+        "Con": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        },
+    
+        "Int": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        },
+    
+        "Sag": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        },
+    
+        "Char": {
+            "initialValue": 0,
+            "alterationBonu" : 0,
+            "variousBonu" : 0,
+            "variousMalus": 0
+        }
+    },
+
+    "armoryClass": {
+        "armorBaseValue" : 0,
+        "dexModifier" : 0,
+        "shieldModifier" : 0,
+        "heightModifier" : 0,
+        "naturalArmorModifier" : 0,
+        "parryModifier" : 0,
+        "otherModifier" : 0
+    },
+
+    "competences": {
+        "Acrobaties": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Art de la magie": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Artisanat": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Bluff": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Concentration": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Connaissance": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Contrefaçon": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Crochetage": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Décryptage": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Déguisement": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Déplacement silencieux": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Désamorçage": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Détection": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Diplomatie": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Discrétion": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Dressage": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Equilibre": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Equitation": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Escalade": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "For",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Escamotage": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Estimation": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Evasion": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Fouille": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Intimidation": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Langue": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Int",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Maîtrise des cordes": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Dex",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Natation": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "For",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Perception auditive": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Premiers secours": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Profession": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Psychologie": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Renseignements": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Représentation": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Saut": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "For",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Survie": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Sag",
+            "abilityClass" : true,
+            "inateAbility" : false
+        },
+        "Utilisation d'objets magiques": {
+            "master" : 0,
+            "modCar" : 0,
+            "otherMod" : 0,
+            "associatedChar" : "Cha",
+            "abilityClass" : true,
+            "inateAbility" : false
+        }
+    }
+
+
+}
