@@ -33,9 +33,7 @@ class CharacteristicLine extends Component {
         this.calculateCharacteristicMod()
         this.setState({modificator : this.modCharacteristic}, ()=>{})
       })
-    })
-    
-    
+    }) 
   }
 
   render() {
