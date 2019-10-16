@@ -1,0 +1,58 @@
+{
+  "characteristics": [
+    {
+      "name": "For",
+      "totalValue": 12,
+      "initialValue": 12,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": 1
+    },
+    {
+      "name": "Con",
+      "totalValue": 0,
+      "initialValue": 0,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": 0
+    },
+    {
+      "name": "Dex",
+      "totalValue": 10,
+      "initialValue": 10,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": 0
+    },
+    {
+      "name": "Sag",
+      "totalValue": 10,
+      "initialValue": 10,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": 0
+    },
+    {
+      "name": "Int",
+      "totalValue": 1,
+      "initialValue": 1,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": 0
+    },
+    {
+      "name": "Cha",
+      "totalValue": 4,
+      "initialValue": 4,
+      "alterationBonus": 0,
+      "variousBonus": 0,
+      "variousMalus": 0,
+      "modificator": -4
+    }
+  ]
+}
