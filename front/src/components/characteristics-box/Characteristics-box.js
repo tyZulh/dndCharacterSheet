@@ -9,7 +9,7 @@ class CharacteristicsBox extends Component {
     "Con",
     "Int",
     "Sag",
-    "Char"
+    "Cha"
   ]
    
   render() {

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './Characteristic-line.scss'
 
 class CharacteristicLine extends Component {
   state = {
+    name : "",
     totalValue : 0,
     initialValue : 0,
     alterationBonus : 0,
@@ -31,14 +33,35 @@ class CharacteristicLine extends Component {
         totalValue : this.totValue,
       }, ()=> {
         this.calculateCharacteristicMod()
-        this.setState({modificator : this.modCharacteristic}, ()=>{})
+        this.setState({modificator : this.modCharacteristic}, ()=>{
+          axios.post('http://localhost:4000/characteristics/' + this.props.data, {
+            ...this.state
+          })
+        })
+
       })
     })
     
-    
+  }
+
+  componentDidMount() {
+    this.setState({
+      name : this.props.data
+    })
+
+    axios.get('http://localhost:4000/characteristics/' + this.props.data)
+    .then(result => {
+      console.log(result);
+
+      this.setState({
+        ...result.data
+      })
+    })
   }
 
   render() {
+    console.log(this.state);
+    
     return (
       <div className="charLineWrapper">
         <div className="characteristicLine">
@@ -57,7 +80,7 @@ class CharacteristicLine extends Component {
                 name="initialValue"
                 className="inputBox"
                 onChange={this.handleChange}
-                placeholder={this.state.initialValue}
+                value={this.state.initialValue}
               /> + 
             </div>
 
@@ -67,7 +90,7 @@ class CharacteristicLine extends Component {
                 name="alterationBonus"
                 className="inputBox"
                 onChange={this.handleChange}
-                placeholder={this.state.alterationBonus}
+                value={this.state.alterationBonus}
               /> +     
             </div>
 
@@ -77,7 +100,7 @@ class CharacteristicLine extends Component {
                 name="variousBonus"
                 className="inputBox"
                 onChange={this.handleChange}
-                placeholder={this.state.variousBonus}
+                value={this.state.variousBonus}
               /> -
             </div>
 
@@ -87,7 +110,7 @@ class CharacteristicLine extends Component {
                 name="variousMalus"
                 className="inputBox"
                 onChange={this.handleChange}
-                placeholder={this.state.variousMalus}
+                value={this.state.variousMalus}
               />
             </div>
 
