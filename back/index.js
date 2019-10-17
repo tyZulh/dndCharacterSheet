@@ -17,8 +17,6 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json())
 
-console.log(routes)
-
 app.use("/characteristics", routes.Characteristics)
 
 app.get('/', (req, res) => {
