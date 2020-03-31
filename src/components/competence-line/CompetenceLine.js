@@ -70,19 +70,6 @@ class CompetenceLine extends Component {
             </span>
           </div>
 
-          <div className='modCar cell'>
-            <input
-              type="number"
-              name="modCar"
-              className="inputBox"
-              onChange={this.handleChange}
-            />
-            
-            <span>
-              +
-            </span>
-          </div>
-
           <div className='otherMod cell'>
             <input
               type="number"
@@ -92,9 +79,24 @@ class CompetenceLine extends Component {
             />
 
             <span>
+              +
+            </span>
+          </div>
+
+          <div className='modCar cell'>
+            <input
+              type="number"
+              name="modCar"
+              className="inputBox"
+              onChange={this.handleChange}
+            />
+            
+            <span>
               
             </span>
           </div>
+
+
         </div>
       </div>
     )
